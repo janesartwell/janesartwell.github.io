@@ -1,0 +1,32 @@
+* {
+  text-decoration: none;
+}
+
+html {
+  background: #fff url(../img/background.png) no-repeat fixed 0 0;
+}
+
+h1 {
+  font: normal 400 100px 'Roboto', sans-serif;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+h2 {
+  font: normal 400 40px 'Roboto', sans-serif;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+div {
+  justify-content: right;
+  text-align: right;
+  margin: 20px;
+  display: flex;
+  font: normal 400 30px 'Roboto', sans-serif;
+  line-height: 2;
+}
+
+.nonitalic {
+  font: normal 400 15px 'Roboto', sans-serif;
+}

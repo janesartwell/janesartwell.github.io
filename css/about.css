@@ -8,13 +8,13 @@ html {
 }
 
 h1 {
-  font: normal 400 100px 'Roboto', sans-serif;
+  font: normal 400 100px 'Roboto';
   margin-top: 20px;
   margin-left: 30px;
 }
 
 main {
-  font: normal 400 20px 'Roboto', sans-serif;
+  font: normal 400 20px 'Roboto';
   margin-left: 30px;
   line-height: 1;
 }
@@ -24,7 +24,7 @@ section {
 }
 
 .home {
-    font: normal 400 20px 'Roboto', sans-serif;
+    font: normal 400 20px 'Roboto';
     justify-content: center;
     text-align: center;
 }

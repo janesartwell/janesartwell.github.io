@@ -36,7 +36,6 @@ h2 {
 }
 
 .overlay {
-  /* Display over the entire page */
   position:absolute;
   z-index: 99;
   top: 0;
@@ -45,25 +44,19 @@ h2 {
   height: 100%;
   background: rgba(0,0,0,0.9);
 
-  /* Horizontal and vertical centering of the image */
   display: flex;
   align-items: center;
   text-align: center;
 
-  /* We hide all this by default */
   visibility: hidden;
 }
 
 .overlay img {
-  /* Maximum image size */
+  display:block;
+  margin: 0 auto;
   max-width: 90%;
   max-height: 90%;
-  margin: 50px;
-  margin-left: 250px;
-  margin-right: 250px;
   border: 5px solid #000;
-
-  /* We keep the ratio of the image */
   width: auto;
   height: auto;
 }

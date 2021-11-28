@@ -16,15 +16,21 @@ h2 {
 }
 
 .home {
-    font: normal 400 20px 'Roboto', sans-serif;
+    font: normal 400 22px 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
     margin: 5px;
 }
 
+.instruction {
+  font: italic 400 15px 'Roboto', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
   }

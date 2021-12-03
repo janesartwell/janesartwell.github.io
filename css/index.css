@@ -2,21 +2,19 @@ html {
   background: #fff url(../img/background.png) no-repeat fixed 0 0;
 }
 
-header {
-  padding: 0;
-}
-
 h1 {
   font: normal 400 100px 'Roboto', sans-serif;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 h2 {
-  font: normal 400 50px 'Roboto', sans-serif;
-  margin: 30px;
+  font: normal 400 30px 'Roboto', sans-serif;
+  margin: 5px;
+  margin-left: 40px;
   text-align: center;
-  margin-top: -25px;
 }
 
 img {
@@ -35,24 +33,25 @@ main {
 .me {
   display: block;
   margin: auto;
-  margin-right: 150px;
+  margin-right: 250px;
 }
 
 .camera {
   display: block;
   margin: auto;
-  margin-left: 150px;
+  margin-left: 250px;
 }
 
 ul {
+  position: absolute;
   text-align: center;
   font: normal 700 30px 'Roboto', sans-serif;
   line-height: 2;
-}
-
-li {
-  background-color: rgba(255,255,255,0.75);
-  width: 300px;
+  background-size: 300px;
+  width: 375px;
+  height: 375px;
+  background-color: rgba(236, 223, 38, 0.55);
+  border-radius: 50%;
 }
 
 a:visited {

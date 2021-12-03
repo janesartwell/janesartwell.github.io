@@ -8,25 +8,48 @@ html {
 
 h1 {
   font: normal 400 100px 'Roboto', sans-serif;
-  margin-top: 10px;
-  margin-left: 30px;
+  margin: 30px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-h2 {
-  font: normal 400 40px 'Roboto', sans-serif;
-  margin-top: 20px;
-  margin-left: 70px;
+img {
+  max-width: 20%;
+  padding: 10px;
+  border: 5px solid black;
 }
 
-div {
-  justify-content: right;
-  text-align: right;
-  margin: 20px;
+main {
+  text-align: center;
+  text-shadow: 2px 2px white;
   display: flex;
   font: normal 400 30px 'Roboto', sans-serif;
   line-height: 2;
 }
 
-.nonitalic {
-  font: normal 400 15px 'Roboto', sans-serif;
+.me {
+  display: block;
+  margin: auto;
+  margin-right: 200px;
+}
+
+.camera {
+  display: block;
+  margin: auto;
+  margin-left: 200px;
+}
+
+ul {
+  margin-top: 50px;
+}
+
+a:visited {
+  text-decoration: none; 
+  color: black;
+}
+
+.rectangle {
+  height: 5px;
+  width: 300px;
+  background-color: rgb(105, 179, 189);
 }

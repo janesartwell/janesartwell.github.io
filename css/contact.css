@@ -3,8 +3,8 @@
     font: 'Roboto';
   }
   
-  html {
-    background: #fff;
+  header {
+    background: #fff url(../img/background.png) no-repeat fixed 0 0;
   }
   
   h1 {

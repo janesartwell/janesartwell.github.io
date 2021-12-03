@@ -18,40 +18,26 @@ h2 {
 }
 
 img {
-  max-width: 20%;
+  max-width: 22%;
   padding: 10px;
-  border: 5px solid black;
 }
 
 main {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
-.me {
-  display: block;
-  margin: auto;
-  margin-right: 250px;
-}
-
-.camera {
-  display: block;
-  margin: auto;
-  margin-left: 250px;
-}
-
 ul {
-  position: absolute;
   text-align: center;
   font: normal 700 30px 'Roboto', sans-serif;
   line-height: 2;
   background-size: 300px;
   width: 375px;
   height: 375px;
-  background-color: rgba(236, 223, 38, 0.55);
   border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(255, 253, 51, 0.5),rgba(255,255,255,0.5))
 }
 
 a:visited {

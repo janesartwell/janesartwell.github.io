@@ -10,16 +10,22 @@ h1 {
 
 main {
   font: normal 400 20px 'Roboto', sans-serif;
-  margin-left: 30px;
-  line-height: 1;
-}
-
-section {
-  background-color: #fff;
+  margin: 30px;
+  line-height: 2;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .home {
     font: normal 400 20px 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
+}
+
+a:visited {
+  text-decoration: none; 
+  color: black;
 }

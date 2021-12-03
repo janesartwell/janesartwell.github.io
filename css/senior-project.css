@@ -1,3 +1,8 @@
+a:visited {
+  text-decoration: none; 
+  color: black;
+}
+
 header {
   background: #fff url(../img/background.png) no-repeat fixed 0 0;
 }
@@ -18,13 +23,19 @@ h2 {
 .home {
     font: normal 400 22px 'Roboto', sans-serif;
     text-align: right;
-    margin: 10px;
+    margin-right: 20px;
 }
 
-.instruction {
-  font: italic 400 15px 'Roboto', sans-serif;
-    justify-content: center;
-    text-align: center;
+.toRead {
+  font: italic 400 22px 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .grid {

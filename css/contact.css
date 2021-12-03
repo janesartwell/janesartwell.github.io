@@ -1,20 +1,15 @@
-* {
-    text-decoration: none;
-    font: 'Roboto';
-  }
-  
-  header {
+header {
     background: #fff url(../img/background.png) no-repeat fixed 0 0;
   }
   
   h1 {
-    font: normal 400 100px 'Open Sans', sans-serif;
+    font: normal 400 100px 'Roboto', sans-serif;
     margin-top: 20px;
     margin-left: 30px;
   }
   
   main {
-    font: normal 400 20px 'Open Sans', sans-serif;
+    font: normal 400 20px 'Roboto', sans-serif;
     margin-left: 30px;
     line-height: 1;
   }
@@ -24,7 +19,7 @@
   }
   
   .home {
-      font: normal 400 20px 'Open Sans', sans-serif;
+      font: normal 400 20px 'Roboto', sans-serif;
       justify-content: center;
       text-align: center;
   }

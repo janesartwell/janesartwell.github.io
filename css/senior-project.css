@@ -1,32 +1,28 @@
-* {
-  text-decoration: none;
-}
-
 header {
   background: #fff url(../img/background.png) no-repeat fixed 0 0;
 }
 
 h1 {
-  font: normal 400 100px 'Open Sans', sans-serif;
+  font: normal 400 100px 'Roboto', sans-serif;
   margin-top: 10px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
 
 h2 {
-  font: normal 400 30px 'Open Sans', sans-serif;
+  font: normal 400 30px 'Roboto', sans-serif;
   margin: 5px;
   margin-left: 40px;
 }
 
 .home {
-    font: normal 400 22px 'Open Sans', sans-serif;
+    font: normal 400 22px 'Roboto', sans-serif;
     text-align: right;
     margin: 10px;
 }
 
 .instruction {
-  font: italic 400 15px 'Open Sans', sans-serif;
+  font: italic 400 15px 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
 }
@@ -48,7 +44,7 @@ h2 {
   color: #ccc;
   
   text-align: right;
-  font: normal 400 22px 'Open Sans', sans-serif;
+  font: normal 400 22px 'Roboto', sans-serif;
 }
 
 .overlay {

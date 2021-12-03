@@ -1,13 +1,9 @@
-* {
-  text-decoration: none;
-}
-
 html {
   background: #fff url(../img/background.png) no-repeat fixed 0 0;
 }
 
 h1 {
-  font: normal 400 100px 'Open Sans', sans-serif;
+  font: normal 400 100px 'Roboto', sans-serif;
   margin: 30px;
   text-align: center;
   margin-top: 40px;
@@ -21,26 +17,28 @@ img {
 }
 
 main {
-  text-align: center;
   display: flex;
-  font: normal 400 30px 'Open Sans', sans-serif;
-  line-height: 2;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .me {
   display: block;
   margin: auto;
-  margin-right: 200px;
+  margin-right: 150px;
 }
 
 .camera {
   display: block;
   margin: auto;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 ul {
-  margin-top: 50px;
+  text-align: center;
+  font: normal 700 30px 'Roboto', sans-serif;
+  line-height: 2;
 }
 
 a:visited {
@@ -49,7 +47,7 @@ a:visited {
 }
 
 .rectangle {
-  height: 5px;
-  width: 300px;
+  height: 50px;
+  width: 50px;
   background-color: rgb(105, 179, 189);
 }

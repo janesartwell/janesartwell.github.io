@@ -41,13 +41,12 @@ ul {
   line-height: 2;
 }
 
+li {
+  background-color: rgba(255,255,255,0.75);
+  width: 300px;
+}
+
 a:visited {
   text-decoration: none; 
   color: black;
-}
-
-.rectangle {
-  height: 50px;
-  width: 50px;
-  background-color: rgb(105, 179, 189);
 }

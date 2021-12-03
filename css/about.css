@@ -23,14 +23,3 @@ section {
     justify-content: center;
     text-align: center;
 }
-
-.myPicture img{
-  display:block;
-  margin: 0 auto;
-  max-width: 30%;
-}
-
-.myPicture {
-  font: normal 400 15px 'Roboto', sans-serif;
-  text-align: center;
-}

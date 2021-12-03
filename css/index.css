@@ -7,9 +7,10 @@ html {
 }
 
 h1 {
-  font: normal 400 100px 'Roboto', sans-serif;
+  font: normal 400 100px 'Open Sans', sans-serif;
   margin: 30px;
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 50px;
 }
 
@@ -21,9 +22,8 @@ img {
 
 main {
   text-align: center;
-  text-shadow: 2px 2px white;
   display: flex;
-  font: normal 400 30px 'Roboto', sans-serif;
+  font: normal 400 30px 'Open Sans', sans-serif;
   line-height: 2;
 }
 

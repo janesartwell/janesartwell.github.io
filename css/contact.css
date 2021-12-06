@@ -50,6 +50,11 @@ header {
     margin-bottom: 10px;
   }
 
+  a:visited {
+    text-decoration: none; 
+    color: black;
+  }
+
   footer {
     text-align: right;
     font: normal 400 14px 'Spectral', serif;

@@ -14,7 +14,7 @@ main {
   margin: 30px;
   line-height: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row;
   text-align: right;
 }
@@ -25,6 +25,11 @@ main img {
   position: relative;
   width: auto;
   height: 370px;
+}
+
+.metoo {
+  opacity: 0.8;
+  margin-left: -90px;
 }
 
 main .bio {

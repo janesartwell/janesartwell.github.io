@@ -23,24 +23,31 @@ header {
 
   .email {
     font: normal 400 30px 'Spectral', serif;
-    margin-left: 30px;
     line-height: 1.5;
-  }
-
-  .myEmails {
     font: normal 400 20px 'Roboto', sans-serif;
-    margin-left: 50px;
+    margin-left: 80px;
     line-height: 1.5;
     margin-top: -10px;
+  }
+
+  .instagram {
+    font: normal 400 30px 'Spectral', serif;
+    margin-right: 50px;
+    line-height: 1.5;
+    font: normal 400 20px 'Roboto', sans-serif;
+    line-height: 1.5;
+    margin-top: -10px;
+    text-align: right;
   }
   
   img {
     display: block;
-    float: right;
+    float: center;
     position: relative;
     width: auto;
-    height: 250px;
-    margin-right: 60px;
+    height: 200px;
+    margin-right: 120px;
+    border: 7px solid black;
   }
 
   .home {

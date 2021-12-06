@@ -54,7 +54,7 @@ header {
 img {
   width: auto;
   height: 500px;
-  border: 10px solid black;
+  border: 12px solid black;
   display: block;
 }
 
@@ -90,6 +90,7 @@ img {
   font-size: 30px;
   right: 0;
 }
+
 .Caption {
   color: black;
   font-family: "Spectral", serif;

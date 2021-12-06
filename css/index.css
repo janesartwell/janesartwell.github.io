@@ -1,46 +1,89 @@
+* {
+  text-decoration: none;
+}
+
 html {
   background: #fff url(../img/background.png) no-repeat fixed 0 0;
 }
 
 h1 {
-  font: normal 400 100px 'Roboto', sans-serif;
+  font: normal 400 95px 'Roboto', sans-serif;
   margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 5px;
-  text-align: center;
+  margin-left: 30px;
+  text-align: left;
 }
 
 h2 {
   font: normal 400 30px 'Roboto', sans-serif;
-  margin: 5px;
+  margin-top: 5px;
   margin-left: 40px;
-  text-align: center;
-}
-
-img {
-  max-width: 22%;
-  padding: 10px;
+  text-align: left;
 }
 
 main {
   display: flex;
-  flex-wrap: nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
-ul {
+.button1 {
+  margin: 40px;
+  font: normal 400 30px 'Spectral', serif;
+  color: #fff;
+  background-color: #000000;
+  display: inline-block;
   text-align: center;
-  font: normal 700 30px 'Roboto', sans-serif;
-  line-height: 2;
-  background-size: 300px;
-  width: 375px;
-  height: 375px;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, rgba(255, 253, 51, 0.5),rgba(255,255,255,0.5))
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid white;
 }
+
+
+.button2 {
+  margin: 40px;
+  font: normal 400 30px 'Spectral', serif;
+  color: #fff;
+  background-color: #000000;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+.button3 {
+  margin: 40px;
+  font: normal 400 30px 'Spectral', serif;
+  color: #fff;
+  background-color: #000000;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+.button4 {
+  margin: 40px;
+  font: normal 400 30px 'Spectral', serif;
+  color: #fff;
+  background-color: #000000;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid white;
+}
+
 
 a:visited {
   text-decoration: none; 
-  color: black;
+  color: white;
+}
+
+button:hover:enabled {
+  color: #000;
+  text-shadow: 2px 2px #000;
+  border: 2px solid black;
+  background-color: rgb(230, 172, 182);
 }

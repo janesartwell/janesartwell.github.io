@@ -23,47 +23,134 @@
     </div>
   </header>
 
-<hr>
-<div class=intro>
-<p class=blurb>As a current senior at Bard College, I am working on my senior project, more commonly known as the "Sproj." 
-  <br> For photography majors like myself, this project consists of creating a series of photographs
-  <br> to be hung as a gallery show this spring. The following images are a selection of the work 
-  <br> I have created so far this school year. These are scans of large format negatives. 
-  </p>
-<i><p class=blurb><a href="Sproj-Artist-Statement.pdf">Read my artist statement here!</a></p></i>
-</div>
-<hr>
 <br>
-
+<br>
   
-<div class="container">
-  <div id="slideshow">
-      <img alt="slideshow" src="img/img001.jpg" id="imgClickAndChange" onclick="changeImage()" />
+<div class="slideContainer">
+  <a class="prevBtn">&#8592;</a>
+    <div class="Slide">
+      <img src="img/img001.jpg"/>
+      <div class="Caption">North South Lake, NY</div>
+    </div>
+  <div class="Slide">
+    <img src="img/img002.jpg"/>
+    <div class="Caption">Germantown, NY</div>
   </div>
-</div>
-<script>
-  var imgs = ["img/img001.jpg",
-  "img/img002.jpg", 
-  "img/img003.jpg", 
-  "img/img004.jpg", 
-  "img/img005.jpg",
-  "img/img006.jpg"];
+  <div class="Slide">
+    <img src="img/img003.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img004.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img005.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img006.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img007.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img008.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img009.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img010.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img011.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img012.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img013.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img014.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img015.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img016.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img017.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <div class="Slide">
+    <img src="img/kat.jpg" />
+    <div class="Caption">North South Lake, NY</div>
+  </div>
+  <a class="nextBtn">&#8594;</a>
+  </div>
 
-  function changeImage(dir) {
-      var img = document.getElementById("imgClickAndChange");
-      img.src = imgs[imgs.indexOf(img.src) + (dir || 1)] || imgs[dir ? imgs.length - 1 : 0];
-  }
-
-  document.onkeydown = function(e) {
-      e = e || window.event;
-      if (e.keyCode == '37') {
-          changeImage(-1) //left <- show Prev image
-      } else if (e.keyCode == '39') {
-          // right -> show next image
-          changeImage()
-      }
-  }
-</script>
+  <br/>
+  <hr>
+  <br>
 
 
+  <div class=intro>
+    <p class=blurb>As a current senior at Bard College, I am working on my senior project, more commonly known as the "Sproj." 
+      <br> For photography majors like myself, this project consists of creating a series of photographs
+      <br> to be hung as a gallery show this spring. The following images are a selection of the work 
+      <br> I have created so far this school year. These are scans of large format negatives. 
+      </p>
+    <i><p class=blurb><a href="Sproj-Artist-Statement.pdf">Read my artist statement here!</a></p></i>
+    </div>
 
+  <br>
+  <hr>
+
+  <footer>
+    Jane Sartwell, 2021
+  </footer>
+
+  <script>
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+       changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+       changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+       showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+       showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("Slide");
+       if (n > slides.length) {
+          slideIndex = 1;
+       }
+       if (n < 1) {
+          slideIndex = slides.length;
+       }
+       Array.from(slides).forEach(item => (item.style.display = "none"));
+       
+       slides[slideIndex - 1].style.display = "block";
+       dots[slideIndex - 1].className += " selected";
+    }
+    </script>

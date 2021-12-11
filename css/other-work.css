@@ -11,6 +11,7 @@ header {
 .title {
   font: normal 400 100px 'Roboto', sans-serif;
   margin-top: -20px;
+  padding-top: 40px;
   margin-left: 20px;
   margin-bottom: 1px;
 }
@@ -18,7 +19,8 @@ header {
 .subtitle {
   font: normal 400 30px 'Spectral', sans-serif;
   margin-top: -15px;
-  margin-left: 25px;
+  padding-top: 10px;
+  margin-left: 40px;
 }
 
 .home {

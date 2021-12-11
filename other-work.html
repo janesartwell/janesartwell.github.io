@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jane Sartwell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet"> 
+  <link href="css/other-work.css" rel="stylesheet">
+</head>
+
+<header>
+    <h1 class=title>other work</h1>
+    <h2 class=subtitle>2018 - 2021</h2>
+    <br>
+    <div class=home>
+      <a href="index.html"><p>back home &#8594;</p></a>
+    </div>
+</header>
+
+<br>
+
+<div class="slideContainer">
+  <a class="prevBtn">&#8592;</a>
+    <div class="Slide">
+      <img src="img/other-work/img015.jpg"/>
+      <div class="Caption">AJ, Pines Resort, Fallsburg, NY</div>
+    </div>
+  <div class="Slide">
+    <img src="img/other-work/img009.jpg"/>
+    <div class="Caption">Mom, Tivoli, NY</div>
+  </div>
+  <a class="nextBtn">&#8594;</a>
+  </div>
+
+  <br/>
+  <br>
+  <footer>
+    Jane Sartwell, 2021
+  </footer>
+
+<body>
+
+  <script>
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+       changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+       changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+       showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+       showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("Slide");
+       if (n > slides.length) {
+          slideIndex = 1;
+       }
+       if (n < 1) {
+          slideIndex = slides.length;
+       }
+       Array.from(slides).forEach(item => (item.style.display = "none"));
+       
+       slides[slideIndex - 1].style.display = "block";
+       dots[slideIndex - 1].className += " selected";
+    }
+    </script>

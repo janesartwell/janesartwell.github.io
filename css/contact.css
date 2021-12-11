@@ -1,11 +1,12 @@
 header {
-    background: #fff url(../img/background.png) no-repeat fixed 0 0;
+    background: #fff url(../img/background.jpg) no-repeat fixed 0 0;
   }
   
   h1 {
     font: normal 400 100px 'Roboto', sans-serif;
     margin-top: 20px;
     margin-left: 30px;
+    margin-bottom: 15px;
   }
 
   main {
@@ -45,9 +46,8 @@ header {
     float: center;
     position: relative;
     width: auto;
-    height: 200px;
+    height: 360px;
     margin-right: 120px;
-    border: 7px solid black;
   }
 
   .home {

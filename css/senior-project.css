@@ -79,6 +79,10 @@ img {
   font-size: 30px;
 }
 
+.prevBtn:hover {
+  cursor: pointer;
+}
+
 .nextBtn {
   margin-top: 175px;
   position: relative;
@@ -89,6 +93,10 @@ img {
   font-weight: bolder;
   font-size: 30px;
   right: 0;
+}
+
+.nextBtn:hover {
+  cursor: pointer;
 }
 
 .Caption {

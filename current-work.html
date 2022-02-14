@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jane Sartwell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">  
+  <link href="css/current-work.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <br>
+    <br>
+    <h1><p class=title>current work</p></h1>
+    <div class=home>
+      <a href="photographs.html"><p>photographs menu &#8594;</p></a>
+    </div>
+  </header>
+
+  <div id=rectangle></div> 
+  </div>
+  <br>
+
+<div class="slideContainer">
+  <a class="prevBtn">&#8592;</a>
+  <div class="Slide">
+    <img src="img/img050.jpg" />
+    <div class="Caption">York Springs, PA<br>1/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img043.jpg" />
+    <div class="Caption">New York, NY<br>2/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img044.jpg" />
+    <div class="Caption">York Springs, PA<br>3/16</div>
+  </div> 
+  <div class="Slide">
+    <img src="img/img049.jpg" />
+    <div class="Caption">Kat, Tivoli, NY<br>4/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img045.jpg" />
+    <div class="Caption">My eye, Tivoli, NY<br>5/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img058.jpg" />
+    <div class="Caption">Austin, TX<br>6/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img046.jpg" />
+    <div class="Caption">Kat, Red Hook, NY<br>7/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img051.jpg" />
+    <div class="Caption">Me, Tivoli, NY<br>8/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img055.jpg" />
+    <div class="Caption">Tivoli, NY<br>9/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img047.jpg" />
+    <div class="Caption">Kat, Tivoli, NY<br>10/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img052.jpg" />
+    <div class="Caption">New York, NY<br>11/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img057.jpg" />
+    <div class="Caption">New York, NY<br>12/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img056.jpg" />
+    <div class="Caption">Tivoli, NY<br>13/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img048.jpg" />
+    <div class="Caption">Kat, Tivoli, NY<br>14/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img053.jpg" />
+    <div class="Caption">New York, NY<br>15/16</div>
+  </div>
+  <div class="Slide">
+    <img src="img/img054.jpg" />
+    <div class="Caption">Gas station parking lot, Vermont<br>16/16</div>
+  </div>
+  <a class="nextBtn">&#8594;</a>
+  </div>
+
+  <br>
+  <br>
+
+  <footer>
+    Jane Sartwell, 2022
+  </footer>
+
+  <script>
+    document.querySelector(".prevBtn").addEventListener("click", () => {
+       changeSlides(-1);
+    });
+    document.querySelector(".nextBtn").addEventListener("click", () => {
+       changeSlides(1);
+    });
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlides(n) {
+       showSlides((slideIndex += n));
+    }
+    function currentSlide(n) {
+       showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("Slide");
+       if (n > slides.length) {
+          slideIndex = 1;
+       }
+       if (n < 1) {
+          slideIndex = slides.length;
+       }
+       Array.from(slides).forEach(item => (item.style.display = "none"));
+       
+       slides[slideIndex - 1].style.display = "block";
+       dots[slideIndex - 1].className += " selected";
+    }
+    </script>

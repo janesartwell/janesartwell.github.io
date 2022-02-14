@@ -35,6 +35,19 @@ header {
   background-color: rgb(224, 158, 169);
 }
 
+a:active {
+  color: #0000;
+}
+
+ul {
+  font: normal 400 30px 'Spectral', serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px;
+  line-height: 2;
+}
+
 .intro {
   display: flex;
   flex-flow: row;

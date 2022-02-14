@@ -1,0 +1,158 @@
+a:visited {
+    text-decoration: none; 
+    color: black;
+  }
+  
+  header {
+    background: #fff url(../img/background.jpg) no-repeat fixed 0 0;
+    margin: 0;
+  }
+  
+  .title {
+    font: normal 400 100px 'Roboto', sans-serif;
+    margin-top: -40px;
+    margin-left: 20px;
+    margin-bottom: 1px;
+  }
+  
+  .subtitle {
+    font: normal 400 30px 'Spectral', sans-serif;
+    margin-top: -15px;
+    margin-left: 25px;
+  }
+  
+  .home {
+      font: normal 400 18px 'Roboto', serif;
+      text-align: right;
+      margin-right: 30px;
+  }
+  
+  #rectangle {
+    width: 100;
+    height: 4px;
+    background-color: rgb(224, 158, 169);
+  }
+  
+  .intro {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font: normal 400 18px 'Spectral', serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  a:active {
+    color: #0000;
+  }
+  
+  ul {
+    font: normal 400 30px 'Spectral', serif;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 20px;
+    line-height: 2;
+  }
+  
+  .intro {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font: normal 400 18px 'Spectral', serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .intro .blurb {
+    font: normal 400 20px 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .Slide {
+    display: none;
+  }
+  
+  img {
+    width: auto;
+    height: 500px;
+    border: 12px solid black;
+    display: block;
+  }
+  
+  .slideContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  .prevBtn {
+    margin-top: 175px;
+    position: relative;
+    width: auto;
+    top: 50%;
+    padding: 30px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .prevBtn:hover {
+    cursor: pointer;
+  }
+  
+  .nextBtn {
+    margin-top: 175px;
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 30px;
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    right: 0;
+  }
+  
+  .nextBtn:hover {
+    cursor: pointer;
+  }
+  
+  .Caption {
+    color: black;
+    font-family: "Spectral", serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .prevBtn,
+    .nextBtn,
+    .Caption {
+       font-size: 16px;
+    }
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font: normal 400 14px 'Spectral', serif;
+    margin-left: 30px;
+    padding: 10px;
+  }

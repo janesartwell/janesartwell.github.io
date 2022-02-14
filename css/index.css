@@ -7,13 +7,8 @@ html {
 }
 
 .title {
-  font: normal 400 100px 'Roboto', sans-serif;
-  margin-left: 40px;
-}
-
-.subtitle {
-  font: normal 400 30px 'Spectral', sans-serif;
-  margin-left: 40px;
+  font: normal 400 120px 'Roboto', sans-serif;
+  text-align: center;
 }
 
 main {

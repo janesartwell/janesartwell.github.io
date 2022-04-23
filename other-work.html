@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Jane Sartwell</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Spectral:wght@300&display=swap" rel="stylesheet">
+
+  <link href="css/other-work.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <br>
+    <br>
+    <h1><p class=title>Other Work</p></h1>
+<br>
+<br>
+  </header>
+
+
+  <div class="slideContainer">
+    <a class="prevBtn">&#8592;</a>
+    <div class="Slide">
+      <img src="img/otherwork1.jpg" />
+      <div class="Caption">Barrytown, NY<br>1/4</div>
+    </div>
+      <div class="Slide">
+        <img src="img/otherwork2.jpg"/>
+        <div class="Caption">Tivoli, NY<br>2/4</div>
+      </div>
+    <div class="Slide">
+        <img src="img/otherwork4.jpg" />
+        <div class="Caption">Twin Lakes, NY<br>3/4</div>
+    <div class="Slide">
+      <img src="img/otherwork3.jpg"/>
+      <div class="Caption">Alice, Tivoli, NY<br>3/10</div>
+    </div>
+
+    </div>
+    <a class="nextBtn">&#8594;</a>
+    </div>
+
+
+    <div class=home>
+      <a href="index.html"><p>back home &#8594;</p></a>
+    </div>
+    <br>
+    <br>
+
+    <footer>
+      Jane Sartwell, 2022
+    </footer>
+
+    <script>
+      document.querySelector(".prevBtn").addEventListener("click", () => {
+         changeSlides(-1);
+      });
+      document.querySelector(".nextBtn").addEventListener("click", () => {
+         changeSlides(1);
+      });
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function changeSlides(n) {
+         showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+         showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("Slide");
+         if (n > slides.length) {
+            slideIndex = 1;
+         }
+         if (n < 1) {
+            slideIndex = slides.length;
+         }
+         Array.from(slides).forEach(item => (item.style.display = "none"));
+
+         slides[slideIndex - 1].style.display = "block";
+         dots[slideIndex - 1].className += " selected";
+      }
+      </script>

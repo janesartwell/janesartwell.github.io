@@ -1,52 +1,62 @@
-header {
-    background: #fff url(../img/background.jpg) no-repeat fixed 0 0;
-  }
-  
-  h1 {
-    font: normal 400 100px 'Roboto', sans-serif;
-    margin-top: 10px;
-    margin-left: 40px;
-    margin-bottom: 5px;
-  }
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-  h2 {
-    font: normal 400 30px 'Roboto', sans-serif;
-    margin: 5px;
-    margin-left: 50px;
-  }
-  
-  .home {
-    font: normal 400 18px 'Roboto', sans-serif;
-    text-align: right;
-    margin-right: 40px;
-    margin-bottom: 8px;
-  }
-
-  #rectangle {
-    width: 100;
-    height: 4px;
-    background-color: rgb(224, 158, 169);
-  }
-
-  a:visited {
-    text-decoration: none; 
-    color: black;
-  }
-
-  main {
-  font: normal 400 18px 'Spectral', serif;
+.title {
+  font: normal 700 60px 'Spectral', serif;
   text-align: left;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
-  line-height: 1.75;
-  }
+  margin-bottom: 1px;
+  margin-top: -50px;
+  margin-left: 20px;
+  color: black;
+}
 
-  footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    font: normal 400 14px 'Spectral', serif;
-    margin-right: 30px;
-    padding: 10px;
-  }
+h2 {
+  font: normal 700 60px 'Spectral', serif;
+  text-align: left;
+  margin-bottom: 1px;
+  margin-top: -50px;
+  margin-left: 20px;
+  color: grey;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 10;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    color: #965F7D;
+}
+
+.home {
+    font: normal 400 22px 'Spectral', serif;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: -50px;
+}
+
+main {
+  font: normal 400 18px 'Spectral', serif;
+  margin: 50px;
+  margin-right: 70px;
+}
+
+.charles {
+  text-align: right;
+  font: italic 400 18px 'Spectral', serif;
+}
+
+.quote {
+  font: normal 400 20px 'Spectral', serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font: normal 400 14px 'Spectral', serif;
+  margin-left: 30px;
+  padding: 10px;
+}

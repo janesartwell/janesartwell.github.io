@@ -3,32 +3,27 @@
 }
 
 html {
-  background: #fff url(../img/background.jpg) no-repeat fixed 0 0;
+  background: #fff;
 }
 
-
 .title {
-  font: normal 400 120px 'Roboto', sans-serif;
-  text-align: left;
+  font-size: 150px;
+  font-family: BIZ UDMincho, serif;
+  text-align: center;
   margin-left: 40px;
-  margin-top: 10px;
+  margin-top: 75px;
   color: black;
 }
 
 .subtitle {
-  font: normal 400 40px 'Roboto', sans-serif;
-  text-align: left;
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
   margin-top: -10px;
   margin-left: 50px;
 }
 
-main {
-  text-align: right;
-  color: black;
-  font: normal 700 40px 'Spectral', serif;
-  margin-right: 50px;
-  text-decoration: underline;
-}
+
 
 a:visited {
   text-decoration: none;
